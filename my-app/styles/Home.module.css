@@ -1,3 +1,6 @@
+.wrapper {
+  height: 100vh;
+}
 .container {
   /* padding: 0 2rem; */
   display: flex;
@@ -5,10 +8,10 @@
 }
 
 .header_section {
-  position:absolute; 
+  position:absolute;
   width: 100%;
   /* max-width: 980px;*/
-  max-height: 800px; 
+  max-height: 800px;
 }
 
 .header_left {
@@ -23,13 +26,14 @@
   width: 55%;
   margin-right: 0;
   height: 800px;
-  
-  
+
+
   right: 80px;
 
  opacity: 30%;
- 
-   background: url("../img/tanks.jpg") no-repeat; 
+ background-color: #000000;
+
+   background: url("../img/tanks.jpg") no-repeat;
 }
 
 .nav_right {
@@ -40,7 +44,7 @@
 
 
 .header_logo {
-  
+
   width: 30px;
   height: 38px;
   top: 33px;
@@ -71,7 +75,7 @@ font-weight: bold;
   display: inline-flex;
   list-style: none;
   padding-left: 0;
- 
+
 
 
 }
@@ -114,7 +118,7 @@ font-style: normal;
 
 
 .line_text {
-  
+
   width: 720px;
 height: 120px;
 left: 80px;
@@ -124,6 +128,81 @@ font-size: 25px;
 line-height: 160%;
 color: #F6F6F6;
 padding: 5px 66px;
+}
+
+.navmenu_right {
+
+  left: 960px;
+top: 44px;
+
+
+}
+
+.navmenu_right_list {
+  display: inline-flex;
+  list-style: none;
+  /* padding-left: 0; */
+  width: 100px;
+height: 17px;
+
+
+
+
+}
+
+.navmenu_right_item {
+
+
+
+opacity: 0.5;
+/* margin-right: 9.64px; */
+
+font-size: 14px;
+line-height: 16px;
+
+
+letter-spacing: 0.1em;
+text-transform: uppercase;
+margin-right: 80px;
+
+
+
+color: #F6F6F6;
+}
+
+
+.about_section {
+  display: inline-flex;
+
+ left: 0px;
+top: 136px;
+height: 847px;
+}
+
+.about_title {
+  left: 80px;
+}
+
+.about_title_text {
+  width: 135px;
+/* height: 71px; */
+margin-left: 80px;
+margin-top: 136px;
+font-weight: 300;
+font-size: 47px;
+line-height: 150%;
+
+
+
+color: #000000
+}
+
+.about_text {
+  width: 50vw;
+height: 120px;
+   margin-top: 136px;
+  margin-left: 345px;
+right: 136px;
 }
 
 

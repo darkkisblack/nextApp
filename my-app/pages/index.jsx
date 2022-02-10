@@ -8,38 +8,78 @@ const Header = styled.div`
   font-weight: bold;
 `; */
 
-
 export default function Home() {
   return (
     <div className={styles.wrapper}>
       <section className={styles.header_section}>
         <div className={styles.container}>
           <div className={styles.header_left}>
-            <div className="logo_container">
-               <img src={require("../img/Logo.png")} className={styles.header_logo}/>
-            
+            <div className='logo_container'>
+              <img
+                src={require("../img/Logo.png")}
+                className={styles.header_logo}
+              />
+
               <span className={styles.logo_text}>ПЕНЗГИДРОМАШ</span>
             </div>
             <nav className={styles.navmenu_left}>
               <ul className={styles.navmenu_left_list}>
                 <li className={styles.navmenu_left_item}>
-                  <a href="#">Главная</a>
-                  </li>
-                <li className={styles.navmenu_left_item}><span className={styles.vector_left}>></span></li>
-                <li className={styles.navmenu_left_item}><a href="">Компания</a></li>
+                  <a href='#'>Главная</a>
+                </li>
+                <li className={styles.navmenu_left_item}>
+                  <span className={styles.vector_left}>></span>
+                </li>
+                <li className={styles.navmenu_left_item}>
+                  <a href=''>Компания</a>
+                </li>
               </ul>
             </nav>
             <h1 className={styles.title_left}>Компания</h1>
-<div className={styles.line_left}>
-  <p className={styles.line_text}>Основная сфера деятельности «ПензГидромаш» — создание систем для нефтяной, газовой, химической и нефтехимической сфер промышленности. </p>
-</div>
-
+            <div className={styles.line_left}>
+              <p className={styles.line_text}>
+                Основная сфера деятельности «ПензГидромаш» — создание систем для
+                нефтяной, газовой, химической и нефтехимической сфер
+                промышленности.{" "}
+              </p>
+            </div>
           </div>
-          
 
-          
-          <div className={styles.header_right}></div>
-          <nav className={styles.nav_right}></nav>
+          <div className={styles.header_right}>
+            <nav className={styles.navmenu_right}>
+              <ul className={styles.navmenu_right_list}>
+                <li className={styles.navmenu_right_item}>
+                  <a href='#'>Компания</a>
+                </li>
+                <li className={styles.navmenu_right_item}>
+                  <a href='#'>Продукты и услуги</a>
+                </li>
+                <li className={styles.navmenu_right_item}>
+                  <a href=''>Проекты</a>
+                </li>
+                <li className={styles.navmenu_right_item}>
+                  <a href='#'>Новости</a>
+                </li>
+                <li className={styles.navmenu_right_item}>
+                  <a href='#'>Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <nav className={styles.nav_right}></nav>
+      <section className={styles.about_section}>
+        <div className={styles.about_title}>
+          <h1 className={styles.about_title_text}>О нас</h1>
+        </div>
+        <div className={styles.about_text}>
+          <p>
+            Наша цель — взаимовыгодное сотрудничество на основе долгосрочных
+            контрактов. Мы представлены на рынке с 2006 года и не перестаем
+            развиваться, совершенствовать качество своих услуг, оптимизировать
+            затраты для снижения стоимости продукции.
+          </p>
         </div>
       </section>
       {/*   <div className={styles.container}>
