@@ -1,6 +1,11 @@
+import React from "react";
 /* import Header from "./components/Header"; */
-/* import Image from "next/image"; */
+ import Image from "next/image"; 
 import styles from "../styles/Home.module.css";
+import logo from "/img/Logo.png"
+import tanks from "/img/tanks.png"
+import AboutImage from "/img/About_image.png"
+import TransportImage from "/img/Transport.png"
 /* import Logo from "../img/Logo.png" */
 /* import styled from "styled-components";
 const Header = styled.div`
@@ -8,17 +13,42 @@ const Header = styled.div`
   font-weight: bold;
 `; */
 
+
 export default function Home() {
+ 
+  
+
   return (
-    <div className={styles.wrapper}>
-      <section className={styles.header_section}>
+
+  
+
+
+
+
+
+ <div className={styles.wrapper}>
+      
+
+       <nav className={styles.nav_right}>
+         <a className={styles.nav_right__burger}>
+           <span></span>
+           <span></span>
+         </a>
+       <p className={styles.nav_right__text}>Меню</p>
+       <a href="#" className={styles.nav_right__text_arrow}>Листай вниз</a>
+       
+       </nav>
+      <section className={styles.header_section .container}>
         <div className={styles.container}>
           <div className={styles.header_left}>
-            <div className='logo_container'>
-              <img
-                src={require("../img/Logo.png")}
-                className={styles.header_logo}
-              />
+            <div className={styles.logo_container}>
+              <div className={styles.header__logo}><Image
+                src={logo}
+                 width={39}
+                height={38} 
+               
+              /></div>
+              
 
               <span className={styles.logo_text}>ПЕНЗГИДРОМАШ</span>
             </div>
@@ -37,6 +67,7 @@ export default function Home() {
             </nav>
             <h1 className={styles.title_left}>Компания</h1>
             <div className={styles.line_left}>
+              <div className={styles.line}></div>
               <p className={styles.line_text}>
                 Основная сфера деятельности «ПензГидромаш» — создание систем для
                 нефтяной, газовой, химической и нефтехимической сфер
@@ -68,80 +99,80 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <nav className={styles.nav_right}></nav>
-      <section className={styles.about_section}>
-        <div className={styles.about_title}>
+      
+      <section className={styles.about_section .container}>
+      <div className={styles.container_about}>
+        <ul className={styles.container_about_title}>
+          <li className={styles.about_title}>
           <h1 className={styles.about_title_text}>О нас</h1>
-        </div>
-        <div className={styles.about_text}>
-          <p>
+        </li>
+        <li className={styles.about_text}>
+          <p className={styles.about_text_content}>
             Наша цель — взаимовыгодное сотрудничество на основе долгосрочных
-            контрактов. Мы представлены на рынке с 2006 года и не перестаем
+            контрактов.<br/> Мы представлены на рынке с 2006 года и не перестаем
             развиваться, совершенствовать качество своих услуг, оптимизировать
             затраты для снижения стоимости продукции.
           </p>
-        </div>
+        </li>
+        </ul>
+        
+        <ul className={styles.about_context}>
+          <li className={styles.about_item}>
+            <div className={styles.about_image}>
+              <Image src={AboutImage} alt=""   width={880}
+      height={580} />
+            </div>
+            <div className={styles.about_content}>
+              <p className={styles.about_content_item}>Выполняем все работы по проектированию систем, закупке необходимых материалов, производству, установке, наладке, гарантийному и внегарантийному обслуживанию. Уникальный парк оборудования позволяет находить решения для любых производственных задач клиентов.</p>
+              <p className={styles.about_content_item}>Также мы берем на себя все сложности, связанные с сертификацией нестандартного оборудования. В этом процессе принимают участие инженеры и юристы с многолетним опытом работы. Клиенты получают все нужные документы для того, чтобы использование оборудования было полностью законным. </p>
+              <p className={styles.about_content_item}>Выпускаемая нашей компанией продукция разрешена к применению Ростехнадзором. На производстве внедрен жесткий менеджмент качества — по международному стандарту<br/> ГОСТ Р ИСО 9001.</p>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+        
       </section>
-      {/*   <div className={styles.container}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
+      <section className={styles.transoprt_section .container}>
+      <div className={styles.container_about }>
+        <div className={styles.container_title__transport}>
+          
+          <h1 className={styles.title_transport}>Транспорт</h1>
+        
+      
+        </div>
+        
+        <ul className={styles.about_context__transport}>
+          <li className={styles.about_item}>
+            <div className={styles.about_image}>
+              <Image src={TransportImage} alt=""   width={880}
+      height={620} />
+            </div>
+            <div className={styles.about_content_transport}>
+              <div className={styles.about_content_auto}>
+              <h1 className={styles.about_content_item_title}>Автотранспорт</h1>
+              <p className={styles.about_transport_item}>— Собственная автотранспортная компания
 
-          <p className={styles.description}>
-            Get started by editing{" "}
-            <code className={styles.code}>pages/index.js</code>
-          </p>
 
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Documentation &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
 
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h2>Learn &rarr;</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
+ </p>
+              <p className={styles.about_transport_item}>— Перевозка негабаритных и тяжеловесных грузов</p>
+              <p className={styles.abouttransportt_item}>— Доставка в любую точку России</p>
+            </div>
+            <div className={styles.about_transport_railway}>
+              <h1 className={styles.about_content_item_title}>Железнодорожный <br/>транспорт</h1>
+              <p className={styles.about_transport_item}>На заводе имеется ж/д ветка, заходящая в производственное здание </p>
+              
+            </div>
+            </div>
+            
 
-            <a
-              href="https://github.com/vercel/next.js/tree/canary/examples"
-              className={styles.card}
-            >
-              <h2>Examples &rarr;</h2>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
-              <h2>Deploy &rarr;</h2>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
-          </div>
-        </main>
-
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <span className={styles.logo}>
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
-            </span>
-          </a>
-        </footer>
-      </div> */}
-    </div>
+          </li>
+        </ul>
+      </div>
+        
+      </section>
+      
+    </div> 
   );
 }
