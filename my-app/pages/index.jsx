@@ -19,14 +19,14 @@ export default function Home() {
 
   const changeTransportImage = (event) => {
     if (event.target) {
-      console.log("навел суда");
+      
       setTransportImageState(1);
     }
   };
 
   const textHover = (event) => {
     if (event.target) {
-      console.log("навел суда");
+      
       setTransportImageState(2);
     }
   };
